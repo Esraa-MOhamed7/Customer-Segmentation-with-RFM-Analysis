@@ -1,4 +1,4 @@
-# 🧮 RFM Customer Segmentation
+# 🛍️ RFM Customer Segmentation
 
 This project uses RFM analysis to group customers based on how recently they purchased (Recency), how often they buy (Frequency), and how much they spend (Monetary). It helps businesses understand customer behavior and target the right people.
 
