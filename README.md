@@ -1,0 +1,28 @@
+# 🧮 RFM Customer Segmentation
+
+This project uses RFM analysis to group customers based on how recently they purchased (Recency), how often they buy (Frequency), and how much they spend (Monetary). It helps businesses understand customer behavior and target the right people.
+
+---
+
+## What I Did
+
+1. **Loaded and cleaned the data**  
+   Removed missing values and prepared the dataset for analysis.
+
+2. **Calculated RFM metrics**  
+   - Recency: Days since last purchase  
+   - Frequency: Total number of purchases  
+   - Monetary: Total amount spent
+
+3. **Scored each customer**  
+   Assigned scores from 1 to 5 for each metric (higher is better).
+
+4. **Created RFM segments**  
+   Combined scores to group customers into categories like "Champions", "Loyal", or "At Risk".
+
+5. **Visualized the results**  
+- ![barplot](ww./jj)
+- ![pieplot](ww./jj)
+- ![barplot](ww./jj)
+
+## 📁 Project Structure
