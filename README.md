@@ -21,7 +21,7 @@ This project uses RFM analysis to group customers based on how recently they pur
    Combined scores to group customers into categories like "Champions", "Loyal", or "At Risk".
 
 5. **Visualized the results**  
-- ![barplot](ww./jj)
+- ![barplot](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Total%20Revenue%20by%20Segment.png)
 - ![pieplot](ww./jj)
 - ![barplot](ww./jj)
 
