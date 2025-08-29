@@ -22,7 +22,6 @@ This project uses RFM analysis to group customers based on how recently they pur
 
 5. **Visualized the results**  
 - ![barplot](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Total%20Revenue%20by%20Segment.png)
-- ![pieplot](ww./jj)
+- ![pieplot](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Top%203%20Segments%20by%20Count%20and%20Revenue.png)
 - ![barplot](ww./jj)
 
-## 📁 Project Structure
