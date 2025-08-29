@@ -6,8 +6,9 @@ This project uses RFM analysis to group customers based on how recently they pur
 
 ## What I Did
 
-1. **Loaded and cleaned the data**  
-   Removed missing values and prepared the dataset for analysis.
+1. **Loaded and cleaned the data**   
+   - Checked for missing values and removed nulls  
+   - Dropped duplicate records to ensure accuracy
 
 2. **Calculated RFM metrics**  
    - Recency: Days since last purchase  
