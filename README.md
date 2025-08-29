@@ -11,12 +11,13 @@ This project uses RFM analysis to group customers based on how recently they pur
    - Dropped duplicate records to ensure accuracy
 
 2. **Calculated RFM metrics**  
-   - Recency: Days since last purchase  
-   - Frequency: Total number of purchases  
-   - Monetary: Total amount spent
+   - Recency: Days since last purchase (scored from 5 to 1, where 1 = most recent)  
+   - Frequency: Total number of purchases (scored from 1 to 5)  
+   - Monetary: Total amount spent (scored from 1 to 5)
 
 3. **Scored each customer**  
-   Assigned scores from 1 to 5 for each metric (higher is better).
+   Assigned scores from 1 to 5 for each metric.  
+   *Note: Recency was reversed—customers with more recent purchases received lower scores (1 = most recent).*
 
 4. **Created RFM segments**  
    Combined scores to group customers into categories like "Champions", "Loyal", or "At Risk".
