@@ -6,7 +6,7 @@ This project takes RFM Analysis beyond a notebook. It connects **Data Analysis**
 
 ---
 
-## ⚙️ How It Works — 2 Triggers
+## How It Works — 2 Triggers
 
 ### 📁 File Trigger (Automated Analysis)
 
