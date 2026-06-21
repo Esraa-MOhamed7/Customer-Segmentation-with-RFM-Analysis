@@ -1,32 +1,82 @@
-# 🛍️ RFM Customer Segmentation
+# 🎯 RFM Customer Segmentation — Automated AI Pipeline
 
-This project uses RFM analysis to group customers based on how recently they purchased (Recency), how often they buy (Frequency), and how much they spend (Monetary). It helps businesses understand customer behavior and target the right people.
+> Can a single workflow analyze customers, send reports, fire alerts, and answer questions about the data — automatically?
 
----
-
-## What I Did
-
-1. **Loaded and cleaned the data**   
-   - Checked for missing values and removed nulls  
-   - Dropped duplicate records to ensure accuracy
-
-2. **Calculated RFM metrics**  
-   - Recency: Days since last purchase (scored from 5 to 1, where 1 = most recent)  
-   - Frequency: Total number of purchases (scored from 1 to 5)  
-   - Monetary: Total amount spent (scored from 1 to 5)
-
-3. **Scored each customer**  
-   Assigned scores from 1 to 5 for each metric.  
-   *Note: Recency was reversed—customers with more recent purchases received lower scores (1 = most recent).*
-
-4. **Created RFM segments**  
-   Combined scores to group customers into categories like "Champions", "Loyal", or "At Risk".
-
-5. **Visualized the results**  
-![barplot](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Total%20Revenue%20by%20Segment.png)
-![pieplot](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Top%203%20Segments%20by%20Count%20and%20Revenue.png)
-![barplot](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Customer%20Segment%20Distribution.png)
+This project takes RFM Analysis beyond a notebook. It connects **Data Analysis**, **AI Agents**, and **Automation** in one n8n workflow that serves real business decisions.
 
 ---
 
-🙏 Thank you for exploring this project. I hope it helps you understand RFM segmentation and inspires your own data journey.
+## ⚙️ How It Works — 2 Triggers
+
+### 📁 File Trigger (Automated Analysis)
+
+Activated when a CSV file is uploaded to **Google Drive**:
+
+1. Validates the file type
+2. Downloads and processes the data
+3. Sends it to an AI model via API
+4. Runs **RFM Analysis** and scores each customer
+5. Stores results in **Google Sheets**
+6. Sends an automatic **report to the Manager**
+7. Fires a **Telegram Alert** if at-risk customers are detected
+
+### 💬 Chat Trigger (Interactive Q&A)
+
+A conversational AI agent that lets users ask questions about customer data in natural language — pulling answers directly from Google Sheets.
+
+> *"How many at-risk customers do we have?"* → answered instantly from live data.
+
+---
+
+## RFM Scoring
+
+| Metric | Description | Score Direction |
+|---|---|---|
+| **Recency** | Days since last purchase | 1 = most recent |
+| **Frequency** | Total number of purchases | 5 = most frequent |
+| **Monetary** | Total amount spent | 5 = highest spend |
+
+Combined scores map each customer to a segment:
+
+| Segment | Profile |
+|---|---|
+|  Champions | Recent, frequent, high spenders |
+|  Loyal | Consistent buyers with solid value |
+|  At Risk | Were active — going quiet |
+|  Lost | Low across all three metrics |
+
+---
+
+## Tech Stack
+
+| Layer | Tool |
+|---|---|
+| Workflow Automation | n8n |
+| AI Model | Claude (Anthropic) via API |
+| File Storage | Google Drive |
+| Data Storage | Google Sheets |
+| Alerts | Telegram |
+| Analysis | Python / RFM Logic |
+
+---
+
+## Visualizations
+
+- Bar chart — customer distribution per segment  
+- Pie chart — segment share of total base  
+- Bar chart — average monetary value per segment  
+
+---
+
+## Links
+
+- 💻 [Code & Workflow](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis)
+- 📓 [Kaggle Notebook](https://www.kaggle.com/code/esraamoh7med/customer-segmentation-with-rfm-analysis)
+
+---
+
+## Note
+
+This project was a hands-on experiment in combining Data Analysis, Machine Learning, Automation, and AI Agents in a single workflow — built to support real business decisions, not just demo outputs.
+
+Feedback and suggestions are always welcome!
