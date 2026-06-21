@@ -65,8 +65,10 @@ Combined scores map each customer to a segment:
 - Bar chart — customer distribution per segment
   ![Alt text](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Customer%20Segment%20Distribution.png)
 
-- Pie chart — segment share of total base  
-- Bar chart — average monetary value per segment  
+- Pie chart — segment share of total base
+  ![Alt text](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Total%20Revenue%20by%20Segment.png)
+- Bar chart — average monetary value per segment
+  ![Alt text](https://github.com/Esraa-MOhamed7/Customer-Segmentation-with-RFM-Analysis/blob/main/Total%20Revenue%20by%20Segment.png)
 
 ---
 
